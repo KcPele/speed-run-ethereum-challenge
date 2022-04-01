@@ -14,8 +14,7 @@ contract Vendor is Ownable {
   constructor(address tokenAddress) {
     yourToken = YourToken(tokenAddress);
   }
- 
-
+ //TODO: alway checking inorder to avoid error
 
   // ToDo: create a payable buyTokens() function:
     function buyTokens(uint256 _amoount) public payable returns(uint256){
