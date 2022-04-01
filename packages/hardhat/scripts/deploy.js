@@ -19,7 +19,7 @@ const R = require("ramda");
 This deploy script is no longer in use, but is left for reference purposes!
 */
   const yourToken = await deploy("YourToken")
-
+  const result = await yourToken.transfer(0xc13329E0a6A4cdfBF738951cc9693E1eAF0167e4, utils.parseEther("1000"));
   //Todo: deploy the vendor
   //const vendor = await deploy("Vendor",[ yourToken.address ])
 
